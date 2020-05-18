@@ -10,6 +10,10 @@ $Shadow: #e6e6e6;
 	color: $SoftRed;
 }
 
+.wrap {
+	padding: 0 10%;
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -37,9 +41,9 @@ p {
 
 .header {
 	display: flex;
-	padding: 30px 50px;
 	justify-content: space-between;
 	align-items: center;
+	padding: 40px 0;
 	.hamb {
 		display: none;
 		cursor: pointer;
@@ -82,7 +86,12 @@ p {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	.intro {
-		margin: 50px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.btns button {
+		margin: 5px;
 	}
 	.btns :nth-child(2) {
 		background-color: rgb(240, 240, 240);
@@ -96,16 +105,18 @@ p {
 		align-items: flex-end;
 
 		.rectangle {
-			height: 15em;
-			width: 70%;
-			margin-top: -50%;
+			position: relative;
+			right: -25%;
+			padding: 30%;
+			width: 100%;
+			margin-top: -55%;
 			background-color: $SoftBlue;
-			border-bottom-left-radius: 50%;
+			border-bottom-left-radius: 140px;
 		}
 
 		img {
 			width: 100%;
-			z-index: 999;
+			z-index: 996;
 		}
 	}
 	h1 {
@@ -118,7 +129,7 @@ p {
 }
 
 .features {
-  margin-top: 3em;
+	margin-top: 3em;
 	.introText {
 		text-align: center;
 	}
@@ -264,7 +275,7 @@ p {
 				flex: 1;
 				font-size: 0.8em;
 				margin: 8px;
-				padding: 10px;
+				padding: 15px;
 				justify-content: center;
 				background-color: $SoftRed;
 				border: none;
@@ -338,6 +349,7 @@ p {
 	height: 100%;
 	width: 100%;
 	background-color: hsla(229, 31%, 21%, 0.959);
+	z-index: 999;
 	.mobileHeader {
 		display: flex;
 		justify-content: space-between;
