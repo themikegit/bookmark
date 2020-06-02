@@ -4,6 +4,8 @@ $Grayish: hsl(229, 8%, 60%);
 $Blue: hsl(229, 31%, 21%);
 $Shadow: #e6e6e6;
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
 .active {
 	border-bottom: 3px solid $SoftRed !important;
 	transition: 0.3s ease-in-out;
